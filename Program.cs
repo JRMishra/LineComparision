@@ -27,8 +27,10 @@ namespace LineComparision
 
             if (line1Length == line2Length)
                 Console.WriteLine("Both lines have equal length");
+            else if(line1Length > line2Length)
+                Console.WriteLine("First line is longer than the second one");
             else
-                Console.WriteLine("Both lines have unequal length");
+                Console.WriteLine("First line is sorter than the second one");
 
             return;
         }
