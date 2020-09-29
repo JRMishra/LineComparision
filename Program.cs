@@ -10,50 +10,45 @@ namespace LineComparision
             Console.WriteLine("Welcome to the Line Comparision Computation");
             Console.WriteLine("===========================================");
 
-            int[] line1Point1 = new int[2];
-            int[] line1Point2 = new int[2];
-            int[] line2Point1 = new int[2];
-            int[] line2Point2 = new int[2];
+            Point line1Start = new Point();
+            Point line1End = new Point();
+            Point line2Start = new Point();
+            Point line2End = new Point();
 
-            StorePoints(ref line1Point1, ref line1Point2);
-            double line1Length;
-            line1Length= FindLength(line1Point1, line1Point2);
-            Console.WriteLine("Length of first line is " + line1Length);
+            Console.WriteLine("For First Line");
+            StorePoints(ref line1Start, ref line1End);
+            Line line1 = new Line(line1Start, line1End);
 
-            StorePoints(ref line2Point1, ref line2Point2);
-            double line2Length;
-            line2Length = FindLength(line2Point1, line2Point2);
-            Console.WriteLine("Length of first line is " + line2Length);
+            Console.WriteLine("For Second Line");
+            StorePoints(ref line2Start, ref line2End);
+            Line line2 = new Line(line2Start, line2End);
 
-            if (line1Length == line2Length)
+            Console.WriteLine("Length of first line is " + line1.Length);
+            Console.WriteLine("Length of first line is " + line2.Length);
+
+            
+            if (line1.Length.CompareTo(line2.Length)==0)
                 Console.WriteLine("Both lines have equal length");
-            else if(line1Length > line2Length)
+            else if(line1.Length.CompareTo(line2.Length) > 0)
                 Console.WriteLine("First line is longer than the second one");
             else
                 Console.WriteLine("First line is sorter than the second one");
-
+            
             return;
         }
 
-        static void StorePoints(ref int[] p1, ref int[] p2)
+        static void StorePoints(ref Point p1, ref Point p2)
         {
-            Console.WriteLine("Enter X-Coordinate of 1st point");
-            p1[0] = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Enter Y-Coordinate of 1st point");
-            p1[1] = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Enter X-Coordinate of 2nd point");
-            p2[0] = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Enter Y-Coordinate of 2nd point");
-            p2[1] = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Enter X-Coordinate of start point");
+            p1.X = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Y-Coordinate of start point");
+            p1.Y = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Enter X-Coordinate of end point");
+            p2.X = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Y-Coordinate of end point");
+            p2.Y = Int32.Parse(Console.ReadLine());
 
             return;
-        }
-
-        static double FindLength(int[] p1, int[] p2)
-        {
-            double length;
-            length = Math.Sqrt(Math.Pow((p2[0] - p1[0]),2) + Math.Pow((p2[1] - p1[1]), 2));
-            return length;
         }
     }
 }
