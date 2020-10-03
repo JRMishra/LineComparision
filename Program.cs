@@ -4,6 +4,7 @@ namespace LineComparision
 {
     class Program
     {
+        public static LogDetails logDetails = new LogDetails();
         static void Main(string[] args)
         {
             Console.WriteLine("===========================================");
@@ -39,15 +40,27 @@ namespace LineComparision
 
         static void StorePoints(ref Point p1, ref Point p2)
         {
-            Console.WriteLine("Enter X-Coordinate of start point");
-            p1.X = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Enter Y-Coordinate of start point");
-            p1.Y = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Enter X-Coordinate of end point");
-            p2.X = Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Enter Y-Coordinate of end point");
-            p2.Y = Int32.Parse(Console.ReadLine());
-
+            
+            try
+            {
+                Console.WriteLine("Enter X-Coordinate of start point");
+                p1.X = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Enter Y-Coordinate of start point");
+                p1.Y = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Enter X-Coordinate of end point");
+                p2.X = Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Enter Y-Coordinate of end point");
+                p2.Y = Int32.Parse(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                string msg = "Non integer type user input";
+                logDetails.LogUserInputError(ex, msg);
+                Console.WriteLine(msg+"\n");
+                Console.WriteLine("Terminating the program\n\n");
+                Exception exception = new Exception("Non Integer user input type error");
+                throw exception;
+            }
             Console.ReadLine();
             return;
         }
