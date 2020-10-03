@@ -5,9 +5,10 @@ C:\Users\user\Desktop\Training-CapG\Task2\ConsoleApp1\bin\Debug\netcoreapp3.1\Li
 C:\Users\user\Desktop\Training-CapG\Task2\ConsoleApp1\bin\Debug\netcoreapp3.1\LineComparision.dll
 C:\Users\user\Desktop\Training-CapG\Task2\ConsoleApp1\bin\Debug\netcoreapp3.1\LineComparision.pdb
 C:\Users\user\Desktop\Training-CapG\Task2\ConsoleApp1\obj\Debug\netcoreapp3.1\LineComparision.csprojAssemblyReference.cache
-C:\Users\user\Desktop\Training-CapG\Task2\ConsoleApp1\obj\Debug\netcoreapp3.1\LineComparision.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\Training-CapG\Task2\ConsoleApp1\obj\Debug\netcoreapp3.1\LineComparision.AssemblyInfoInputs.cache
 C:\Users\user\Desktop\Training-CapG\Task2\ConsoleApp1\obj\Debug\netcoreapp3.1\LineComparision.AssemblyInfo.cs
 C:\Users\user\Desktop\Training-CapG\Task2\ConsoleApp1\obj\Debug\netcoreapp3.1\LineComparision.dll
 C:\Users\user\Desktop\Training-CapG\Task2\ConsoleApp1\obj\Debug\netcoreapp3.1\LineComparision.pdb
 C:\Users\user\Desktop\Training-CapG\Task2\ConsoleApp1\obj\Debug\netcoreapp3.1\LineComparision.genruntimeconfig.cache
+C:\Users\user\Desktop\Training-CapG\Task2\ConsoleApp1\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\user\Desktop\Training-CapG\Task2\ConsoleApp1\obj\Debug\netcoreapp3.1\LineComparision.csproj.CopyComplete

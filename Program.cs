@@ -48,6 +48,7 @@ namespace LineComparision
             Console.WriteLine("Enter Y-Coordinate of end point");
             p2.Y = Int32.Parse(Console.ReadLine());
 
+            Console.ReadLine();
             return;
         }
     }

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/R++O5J4E6HVJy0Jzrq+jJJ+xhVOvDCAAPVzMtxbe9ADXM555FjqVyIAzKF4uj4BzwiMSe//R9iVjRT4sfQC6Q==",
+  "dgSpecHash": "LloxzhHlRq9jKQdkwToEp+RdDWfvmsK4sKnRO66cSMY1rIRfD5lcrDtbI0pUYICHl/LtpMFHGV6nrus+dOctag==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\Desktop\\Training-CapG\\Task2\\ConsoleApp1\\LineComparision.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\nlog\\4.7.5\\nlog.4.7.5.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\nlog.config\\4.7.5\\nlog.config.4.7.5.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\nlog.schema\\4.7.5\\nlog.schema.4.7.5.nupkg.sha512"
+  ],
   "logs": []
 }
